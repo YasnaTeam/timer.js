@@ -8,6 +8,8 @@ Add the `timer.js` or the `timer.min.js` file in your HTML.
 
 ```html
 <script src="dist/timer.min.js"></script>
+<!--or-->
+<script src="src/timer.js"></script>
 ```
 ## How to use
 
