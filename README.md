@@ -2,6 +2,17 @@
 
 The `timer.js` is a good way to postpone some codes for some times.
 
+## Instalation
+
+### bower
+`
+bower install js-timer
+`
+### npm
+`
+npm i postpone-timer
+`
+
 ## Getting Started
 
 Add the `timer.js` or the `timer.min.js` file in your HTML.
