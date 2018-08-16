@@ -77,7 +77,7 @@ function Timer() {
         if (isDefined(callback) &&
             (typeof callback == 'function') &&
             isDefined(time) &&
-            ($.isNumeric(time))) {
+            (isNumeric(time))) {
 
             time = Math.floor(time);
 
@@ -96,6 +96,28 @@ function Timer() {
 
         }
     };
+
+    /**
+     * Check if the given value is defined or not.
+     *
+     * @param value
+     *
+     * @returns {boolean}
+     */
+    function isDefined(value) {
+        return (typeof value !== 'undefined');
+    }
+
+    /**
+     * Check if the given value is numeric or not.
+     *
+     * @param value
+     *
+     * @returns {boolean}
+     */
+    function isNumeric(value) {
+        return !isNaN(parseFloat(value)) && isFinite(value);
+    }
 
     return thisTimer;
 }
