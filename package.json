@@ -1,0 +1,22 @@
+{
+  "name": "postpone-timer",
+  "version": "1.0.0",
+  "description": "A Good Way to Postpone Some Codes for Some Times",
+  "main": "dist/timer.min.js ",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YasnaTeam/timer.js.git"
+  },
+  "author": "EmiTis Yousefi <emitis89@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YasnaTeam/timer.js/issues"
+  },
+  "homepage": "https://github.com/YasnaTeam/timer.js#readme"
+}
