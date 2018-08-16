@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Input Event</title>
+	<script type="application/javascript" src="../dist/timer.min.js"></script>
+</head>
+<body>
+<h5>The text of the textarea will be shown in the div when you stop typing for 1 second.</h5>
+<textarea type="text" id="text" style="width: 100%" rows="8"></textarea>
+<br>
+<div id="result"></div>
+<script>
+    let timer  = new Timer();
+    let input  = document.getElementById('text');
+    let result = document.getElementById('result');
+
+    input.addEventListener('input', function () {
+        result.innerHTML = 'typing ...';
+        let val          = this.value;
+
+        timer.delay(function () {
+            result.innerHTML = val;
+        }, 1)
+    })
+</script>
+</body>
+</html>
